@@ -1,0 +1,129 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+h6 {
+  padding-top: 20px;
+  letter-spacing: 5px;
+  color: #ebebeb !important;
+}
+
+h1 {
+  padding-top: 5px;
+  letter-spacing: 15px;
+  font-size: 50px;
+  color: #ebebeb !important;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.score-box {
+  width: 200px;
+  /* Created with https://www.css-gradient.com */
+  border: 0.1px solid grey;
+  border-radius: 5px;
+  border-top: 3px solid grey;
+  padding-bottom: 10px;
+}
+#start-button {
+  margin-top: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  /* Created with https://www.css-gradient.com */
+  background: #9E0103;
+  background: -webkit-linear-gradient(bottom, #9E0103, #EC9192);
+  background: -moz-linear-gradient(bottom, #9E0103, #EC9192);
+  background: linear-gradient(to top, #9E0103, #EC9192);
+  border: none;
+}
+
+.grid {
+  width: 202px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  box-shadow: 0px 2px 9px 1px rgba(12, 85, 102, 0.84);
+  -webkit-box-shadow: 0px 2px 9px 1px rgba(12, 85, 102, 0.84);
+  -moz-box-shadow: 0px 2px 9px 1px rgba(12, 85, 102, 0.84);
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+.mini-grid {
+  width: 82px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+body {
+  /* Created with https://www.css-gradient.com */
+  background: #A2B8B4;
+  background: -webkit-radial-gradient(center, #A2B8B4, #63D3B7);
+  background: -moz-radial-gradient(center, #A2B8B4, #63D3B7);
+  background: radial-gradient(ellipse at center, #A2B8B4, #63D3B7);
+}
+
+@media screen and (max-width:995px) {
+  .score-box {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+  }
+}
+
+@media screen and (max-width:530px) {
+  .score-box {
+    border: none;
+    margin-left: 200px;    
+  }
+    .grid {
+        margin-left: 10px;
+    }
+        #start-button{
+          font-size: 0.8rem;
+        }
+}
+
+@media screen and (max-width:410px) {
+  #start-button {
+    font-size: 0.7rem;
+    position: fixed;
+    bottom: 10px;
+    left: 70px;
+  }
+  .mini-grid {
+    margin-left: 20px;
+    border: 1px solid black;
+  }
+.score-box-text {
+  position: fixed;
+  bottom: 30px;
+  left: 80px;
+  font-size: 0.75rem;
+}
+.score-box {
+  width: 50px;
+}
+
+}

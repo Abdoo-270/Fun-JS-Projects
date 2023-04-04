@@ -1,0 +1,47 @@
+body {
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.kat {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.asansor-room {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  transition: 2s;
+}
+.kat p {
+  font-size: 1.1rem;
+}
+.text{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 615px) {
+  body {
+      justify-content: left;
+    }
+  .asansor-room{
+      right: 0;
+    }
+        .text {display: none;}
+}
+@media screen and (min-width: 990px) {
+  .asansor-room {
+    right: 300px;
+  }
+}
